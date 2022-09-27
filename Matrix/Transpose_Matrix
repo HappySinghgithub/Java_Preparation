@@ -1,0 +1,37 @@
+package abc;
+import java.util.Scanner;
+
+class Transpose
+{
+	public static void main(String[] args) {
+		int a[][] = new int[2][4];
+		Scanner sc = new Scanner(System.in);
+		int i,j;
+		System.out.println("Enter the element in Matrix");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<4;j++)
+			{
+				a[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("Matrix are");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<4;j++)
+			{
+				System.out.print(a[i][j]+"\t");
+			}
+			System.out.println("");
+		}
+		System.out.println("Transpose of a matrix");
+		for(i=0;i<4;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(a[j][i]+"\t");
+			}
+			System.out.println("");
+		}
+	}
+}
