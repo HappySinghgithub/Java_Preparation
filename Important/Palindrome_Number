@@ -1,0 +1,28 @@
+package abc;
+
+import java.util.Scanner;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter any Integer number: ");
+		int no = sc.nextInt();
+		int rem,sum=0;
+		int temp=no;
+		while(temp!=0)
+		{
+			rem = temp%10;
+			sum = sum*10+rem;
+			temp=temp/10;
+		}
+		if(no==sum)
+		{
+			System.out.println(no+" is Palindrome");
+		}
+		else
+		{
+			System.out.println(no+" is not Palindrome");
+		}
+	}
+}
